@@ -5,3 +5,12 @@ div > ul > li > a{
     width: 100%;
     height: 600px;
 }
+#tachado{
+    text-decoration: line-through;
+}
+#Jumbotron{
+    font-family: 'Permanent Marker', cursive;
+}
+li > #navbardrop > div > a{
+    margin: 200px;
+}
