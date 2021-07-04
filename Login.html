@@ -22,26 +22,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ">
-            <li class="nav-item">
-              <a class="nav-link" href="/index">Tienda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Donde comprar</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Contactanos</a>
-            </li>      
+          <ul class="navbar-nav ">     
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                 Mas
               </a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="/Login">Iniciar sesion</a>
-                <a class="dropdown-item" href="#">Cuenta</a>
+                <a class="dropdown-item" href="/signup">signup <span class="sr-only">(currrent)</span></a>
+                <a class="dropdown-item" href="/login">Login</a>
                 <a class="dropdown-item" href="#">Cerrar sesion</a>
               </div>
             </li>
@@ -60,7 +48,7 @@
         <img src="https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" style="width: 500px;height: 400px;" alt="">
         </div> 
         <div class="col-md-6 jumbotron bg-dark text-white">
-          <form action="/action_page.php">
+          <form action="login" method="POST" name="login" onsubmit="return validatelogin(this)">
             <div class="form-group">
               <label for="email">Email:</label>
               <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
